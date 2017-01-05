@@ -1,4 +1,5 @@
-# Creating AutoLayout Constraints for Lab 2 (a more detailed walkthrough) ##
+# Creating AutoLayout Constraints for Lab 2 #
+## (a more detailed walkthrough) ##
 
 If you got stuck during the AutoLayout portion of the lab, this guide will walk you through one way of adding constraints to complete this lab. Note that there are many different (and possibly better) ways to do this same job.
 
@@ -15,13 +16,19 @@ Also note that I've labeled the buttons in this tutorial with numbers to more ea
 To make sure our top row buttons stay at the top of the screen, we'll add constraints for their vertical position.
 
 First, add a **Vertical Position Constraint** between the top left button (Button 1) and the **Top Layout Guide**
+
 ![alt text](/README-images/autolayout1.png)
 
+
 You can now edit this constraint in the Size Inspector. I set this constraint's constant value to 20 (this means that this button will remain 20 pixels below the top of the view), but feel free to use whatever value you see fit.
+
 ![alt text](/README-images/autolayout2.png)
 
+
 We could do the same process for the other top row buttons, but to make potential future changes in margin size easier, **add a "Center Vertically" constraint from Button 2 to Button 1, and a "Center Vertically" constraint from Button 3 to Button 1** (Shown below).
+
 ![alt text](/README-images/autolayout3.png)
+
 
 Now all of our top row buttons will remain at the top of the view!
 
@@ -30,6 +37,7 @@ Now all of our top row buttons will remain at the top of the view!
 First, control-drag from button 1 to the left (leading) edge of the view. Then create a **Leading Space to Container Margin** Constraint. 
 
 ![alt text](/README-images/autolayout4.png)
+
 
 Now, align the leading edges of Buttons 4 and 7 to Button 1 (Create two **Leading** constraints).
 
@@ -118,5 +126,6 @@ You may still have some warnings at this point, which we can resolve by "Updatin
 If you've followed this guide completely, you should have no AutoLayout warnings, and your app's UI should responsively update for any device size or orientation. Congrats!
 
 
+![alt text](/README-images/end-autolayout.gif)
 
 
