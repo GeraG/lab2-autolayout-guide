@@ -55,12 +55,12 @@ In order to ensure each button doesn't overlap with any others and that the spac
 
 Listed below is one way of creating constraints between the drum pad buttons in this app. 
 
-1. Add a **Horizontal Spacing** constraint between Button 1 and Button 3. Click on Button 1 to view the constraint in the Size Inspector (it will show up as `Leading Space`) and set it's constant value to **Standard Value**.
+1. Add a **Horizontal Spacing** constraint between Button 1 and Button 2. Click on Button 1 to view the constraint in the Size Inspector (it will show up as `Trailing Space`) and set it's constant value to **Standard Value**.
 2. Repeat Step 1 for Buttons 2 and 3
 3. Add a **Vertical Spacing** constraint between Button 1 and Button 4. Click on Button 1 to view the constraint in the Size Inspector (it will show up as `Bottom Space`) and set it's constant value to **Standard Value**.
 4. Add a **Center Vertically** constraint between Buttons 4 and 5 and Buttons 4 and 6 
 5. Add a **Center Horizontally** constraint between Buttons 2 and 5 and Buttons 3 and 6 (we could add **Vertical Spacing** constraints instead, but this way we don't have to deal with setting constant values)
-6. Add a **Vertical Spacing** constraint between Button 6 and Button 4 and set it's constant value to **Standard Value**.
+6. Add a **Vertical Spacing** constraint between Button 7 and Button 4 and set it's constant value to **Standard Value**.
 
 Once you are at this point, the constraints for each button should look as follows:
 
@@ -68,7 +68,7 @@ Once you are at this point, the constraints for each button should look as follo
 
 ## Part 5 - Making all the buttons the same height ###
 
-To make all of the buttons equal in height, we *could* control-drag from one button to every other button individually, adding an **Equal Width** constraint. To make our lives easier, instead we'll select all seven buttons, then open the "Add New Constraints" window found right above the debugger (see below), and create all of these constraints at the same time.
+To make all of the buttons equal in height, we *could* control-drag from one button to every other button individually, adding an **Equal Height** constraint. To make our lives easier, instead we'll select all seven buttons, then open the "Add New Constraints" window found right above the debugger (see below), and create all of these constraints at the same time.
 
 ![alt text](/README-images/autolayout7.png)
 
@@ -77,7 +77,7 @@ Now each button's height will be the same as Button 1's height.
 
 ## Part 6 - Making the first 6 Buttons the same width ###
 
-(Similar to Part 5) Now highlight the first 6 buttons (make sure not to include the last one!), then add an **Equal Height** Constraint between them using the "Add New Constraints" tool.
+(Similar to Part 5) Now highlight the first 6 buttons (make sure not to include the last one!), then add an **Equal Width** constraint between them using the "Add New Constraints" tool.
 
 ![alt text](/README-images/autolayout8.png)
 
