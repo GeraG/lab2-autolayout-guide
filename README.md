@@ -79,7 +79,7 @@ Now each button's height will be the same as Button 1's height.
 
 (Similar to Part 5) Now highlight the first 6 buttons (make sure not to include the last one!), then add an **Equal Width** constraint between them using the "Add New Constraints" tool.
 
-![alt text](/README-images/autolayout8.png)
+![alt text](/README-images/new.png)
 
 
 If you want to make sure that you're on the right track at this point, add a temporary constraint from Button 7 to the bottom of the view (**Vertical Spacing to Bottom Layout Guide**). Run your simulator. The buttons should fill the screen and should resize and remain properly centered when the simulator is rotated. **With this added constraint, there should be no AutoLayout Issues**.
